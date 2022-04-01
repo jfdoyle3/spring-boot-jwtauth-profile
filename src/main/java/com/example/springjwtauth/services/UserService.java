@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 package com.example.springjwtauth.services;
 
 import com.example.springjwtauth.entities.User;
 import com.example.springjwtauth.repositories.UserRepository;
 import com.example.springjwtauth.security.services.UserDetailsImpl;
+=======
+package com.careerdevs.expressian.services;
+import com.careerdevs.expressian.entities.auth.User;
+import com.careerdevs.expressian.repositories.UserRepository;
+import com.careerdevs.expressian.security.services.UserDetailsImpl;
+>>>>>>> 00411fa (added project to repo)
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
