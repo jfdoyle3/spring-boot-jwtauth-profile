@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -17,3 +18,7 @@ Add Code to check if Roles exist or to insert them and any other new roles.
 
 
 Program should work as intended.   Program will error if Role table is empty.
+=======
+# startRepo
+Repo that has my current .gitignore 2/12/2022
+>>>>>>> 01583eb (Initial commit)
