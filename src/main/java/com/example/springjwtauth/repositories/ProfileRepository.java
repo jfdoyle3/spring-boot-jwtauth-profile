@@ -6,5 +6,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProfileRepository extends JpaRepository<Profile,Long> {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 23d3b26 (added Profile controller and Repository)
 }
