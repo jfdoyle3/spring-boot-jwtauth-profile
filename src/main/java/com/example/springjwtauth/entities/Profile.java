@@ -23,7 +23,7 @@ public class Profile {
         this.fName = fName;
         this.lName = lName;
         this.title = title;
-        this.age = age;
+        this.age=age;
         this.bio = bio;
         this.role = role;
     }
