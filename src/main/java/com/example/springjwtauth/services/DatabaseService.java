@@ -7,13 +7,14 @@ import java.sql.*;
 @Service
 public class DatabaseService {
 
+    private final static String db="jdbc:mysql://localhost/jwtauthdb-profile";
+    private final static String userDb="username";
+    private final static String passDb="password";
+
     public boolean rolesExists() {
         int count = 0;
         try {
-            Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/jwtauthdb-profile",
-                    "username",
-                    "password");
+            Connection connection = DriverManager.getConnection(db,userDb,passDb);
 
             System.out.println("Connection Open");
 
@@ -47,11 +48,7 @@ public class DatabaseService {
         int id = 0;
 
         try {
-            Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/jwtauthdb-profile",
-                    "username",
-                    "password");
-
+            Connection connection = DriverManager.getConnection(db,userDb,passDb);
 
             String sql = "INSERT INTO role (id, name) values (?,?)";
             PreparedStatement statement = connection.prepareStatement(sql);
@@ -76,10 +73,7 @@ public class DatabaseService {
 
         try {
 
-            Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/jwtauthdb-profile",
-                    "username",
-                    "password");
+            Connection connection = DriverManager.getConnection(db,userDb,passDb);
 
             DatabaseMetaData dbm = connection.getMetaData();
 
@@ -94,6 +88,5 @@ public class DatabaseService {
         } catch(SQLException e){
             e.printStackTrace();
         }
-
     }
 }
