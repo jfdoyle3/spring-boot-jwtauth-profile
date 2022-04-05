@@ -17,3 +17,7 @@ Add Code to check if Roles exist or to insert them and any other new roles.
 
 
 Program should work as intended.   Program will error if Role table is empty.
+
+This repo branches needs to be fixed it has a master and a main. 
+having issues with it and at the moment not want to fix it.
+app works, i lost code and need to retype in again /self route
