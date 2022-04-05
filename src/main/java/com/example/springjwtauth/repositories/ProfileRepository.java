@@ -2,6 +2,9 @@ package com.example.springjwtauth.repositories;
 
 import com.example.springjwtauth.entities.Profile;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ProfileRepository extends JpaRepository<Profile, Long> {
+@Repository
+public interface ProfileRepository extends JpaRepository<Profile,Long> {
+
 }
