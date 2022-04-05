@@ -49,6 +49,15 @@ public class ProfileController {
         repository.deleteById(id);
         return new ResponseEntity<>("Deleted", HttpStatus.OK);
     }
+    @DeleteMapping
+    public ResponseEntity<String> destroyDeveloper() {
+        User currentUser = userService.getCurrentUser();
 
+        if (currentUser == null) {
+            return null;
+        }
+        repository.deleteByUser_id(currentUser.getId());
+        return new ResponseEntity<>("Deleted", HttpStatus.OK);
+    }
 
 }
