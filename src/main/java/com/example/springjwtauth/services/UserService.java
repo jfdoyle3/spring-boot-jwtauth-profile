@@ -1,4 +1,5 @@
 package com.example.springjwtauth.services;
+
 import com.example.springjwtauth.entities.User;
 import com.example.springjwtauth.repositories.UserRepository;
 import com.example.springjwtauth.security.services.UserDetailsImpl;
